@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo MOD CSS</title>
+    <script src="./static/mod/modcss-beta.js"></script>
+
+    <link rel="shortcut icon" type="image/png" href="./static/img/favicon.ico"/>
+    <link rel="stylesheet" href="./static/app/bzmin.css">
+    <link async rel="stylesheet" href="./static/vendor/fontawesome/fontawesome.all.min.css">
+
+</head>
+
+<body :text="fo.fa[nunito]" class="bg">
+    <style>
+        .item {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        input::placeholder {
+            font-style: italic;
+            color: gray;
+        }
+        h3 {
+            text-decoration: none;
+            text-underline-offset: 4px;
+        }
+        div p {
+            padding: 0 6px;
+        }
+        a {
+            text-decoration: none;
+            color: var(--title-color)
+        }
+    </style>
+
+    <main :mod="container[95%] || lg? container[90%]" :size="m.tp[2.8rem]">
+
+        <section :box="h[80vh]" class="card"><!-- INTRO -->
+            <div :mod="row[100%]" :layout="h[50%] al.it[center] ju.co[center]">
+                <div :mod="column[100%]" :box="tx.al[center]">
+                    <h1 :text="fo.sz[200%] fo.wg[bold] " >Demo MOD CSS</h1>
+                    <h3 :text="fo.wg[400]" :size="m[1rem 10%]">MOD is a CSS generation engine only javascript based. 
+                        <br> It was designed to prototype quickly, avoid external CSS, and speed up page loading.
+                    </h3>
+                </div>
+            </div>
+    
+            <p :box="w[100%] tx.al[center] m.tp[-1rem] m.bt[2rem]">
+                <q :box="co[#606050]">Design from scratch directly in your template, anything you want. 
+                    <br> We support almost all CSS properties.</q>
+            </p>
+    
+            <div :box="w[100%]" :text="tx.al[center] co[]">
+                <i class="fas fa-file-arrow-down fa-3x" :layout="dsp[block]"></i>
+                <p :box="tx.al[center] fo.sz[95%]">Only single file (10kb) to get all power of CSS properties.</p>
+            </div>
+            
+            <div :mod="row[100%]" :layout="jus.co[center] m.tp[2rem]">
+                <a href="#"
+                    :size="h[45px] w[170px] p.tp[9px]"
+                    :fx="an[ripples 1s linear infinite]"
+                    :box="bg[#6f42c1] bd[1px solid transparent] br[20px] && hover:bg[none] bd.col[#195bff]" 
+                    :text="tx.de[none] tx.al[center] co[#d4d4d4] && hover:co[#195bff] fo.sz[bolder]">
+                    <i class="fas fa-download"></i> Download here
+                </a>
+            </div>
+        </section>
+    
+        <h2 :text="co[title-color]" :size="m.tp[4rem]">Examples made with MOD CSS</h2>
+        <article :mod="row[100%]">
+            <main :mod="column[100%]">
+
+                <section :mod="row[auto 5px]"><!-- Flexbox grid -->
+                    <div :mod="column[100%]">
+                        <p class="cont item">
+                            <div class="rw" :mod="row[auto]">
+                                <div class="col" :text="fo.sz[11px] || lg? fo.sz[13px]" :mod="column[5rem]">5rem</div>
+                                <div class="col" :text="fo.sz[11px] || lg? fo.sz[13px]" :mod="column[25%]">25%</div>
+                                <div class="col" :text="fo.sz[11px] || lg? fo.sz[13px]" :mod="column[auto]">auto</div>
+                            </div>
+                        
+                            <div class="rw" :mod="row[100%]">
+                                <div class="col" :text="fo.sz[11px] || lg? fo.sz[13px]" :mod="column[auto 5%]">auto offset 5%</div>
+                                <div class="col" :text="fo.sz[11px] || lg? fo.sz[13px]" :mod="column[fit 15%]">fit with offset 15%</div>
+                                <div class="col" :text="fo.sz[11px] || lg? fo.sz[13px]" :mod="column[250px]">250px</div>
+                                <div class="col" :text="fo.sz[11px] || lg? fo.sz[13px]" :mod="column[10vmax]">10vmax</div>
+                            </div>
+                        
+                            <div class="rw" :mod="row[auto]">
+                                <div class="col" :text="fo.sz[11px] || lg? fo.sz[13px]" :mod="column[12em]">4em</div>
+                                <div class="col" :text="fo.sz[11px] || lg? fo.sz[13px]" :mod="column[22%]">22%</div>
+                                <div class="col" :text="fo.sz[11px] || lg? fo.sz[13px]" :mod="column[32vh]">32vh</div>
+                                <div class="col" :text="fo.sz[11px] || lg? fo.sz[13px]" :mod="column[250px]">250px</div>
+                                <div class="col" :text="fo.sz[11px] || lg? fo.sz[13px]" :mod="column[auto]">auto</div>
+                            </div>
+                        </p>
+                    </div>
+                </section>
+    
+    
+                <section :size="m.bt[.7rem]"><!-- Button -->
+                    <div :mod="row[100%]" :layout="jus.co[space-between]">
+                        <button :size="h[35px] w[fit-content]" :box="cursor[pointer] bg[#101010] bd[1px solid transparent] br[2px] p[0 1rem]" 
+                            :text="tx.al[center] co[white] cursor[pointer] && hover:fo.sz[bolder]">Square black</button>
+                        <button :size="h[35px] w[fit-content]" :box="cursor[pointer] bg[#6f42c1] bd[1px solid transparent] br[20px] p[0 1rem] && hover:bg[none] bd.col[#195bff]" 
+                            :text="tx.al[center] && hover:co[#195bff] fo.sz[bolder]">Button blue</button>
+                        <button :size="h[35px] w[fit-content]" :box="cursor[pointer] bg[#198754] bd[1px solid transparent] br[20px] p[0 1rem] && hover:bg[none] bd.col[#195bff]" 
+                            :text="tx.al[center] co[white]  && hover:fo.sz[bolder]">Button green</button>
+                        <button :size="h[35px] w[35px] p[.5rem]" :box="bg[#d63384] br[50%] bd[none]" 
+                            :text="co[#f3f3f3] && hover:co[#404040]" :fx="hover:trf[translateY(4px)]">
+                            <i class="fas fa-download"></i></button>
+                        <button  :size="h[35px] w[fit-content] p[.5rem]" :box="bg[#195bff] br[10px] bd[none]" 
+                            :text="co[#f3f3f3] && hover:co[#404040]" :fx="hover:trf[translateY(4px)]">
+                            <i class="fas fa-heart"></i>  With Icon </button>
+                    </div>
+                </section>
+        
+                <section :size="m.bt[.7rem]"><!-- Inputs -->
+                    <div :mod="row[100% 1%]" :layout="jus.co[space-between]">
+                        <input :mod="column[100%] || lg? column[auto]" type="text" placeholder="Type here" id="inp1"
+                            :size="h[35px] p[.3rem] p.lf[1rem]" :text="co[lightgray]"  
+                            :box="bg[none] ot[none] br[.2rem] bd[1px solid gray] && focus:ot[thick double #32a1ce20]">
+                        
+                        <input :mod="column[100%] || lg? column[auto]" type="text" placeholder="Type here" id="inp1"
+                            :size="p[.3rem] p.lf[1rem]" :text="co[lightgray]"   
+                            :box="bg[#303030] ot[none] br[.2rem] bd[1px solid gray] && focus: bd.col[#505050] bx.sh[0 0px 1px 3px #e6e6e620]">
+                    
+                        <input :mod="column[100%] || lg? column[auto]" type="text" placeholder="Type here" id="inp1"
+                            :size="p[.3rem] p.lf[1rem] h[35px]" :text="co[lightgray]"   
+                            :box="bg[#90909010] ot[none] bd[none] bd.bt[1px solid gray] bx.sz[border-box] && focus: bg[none] bd.bt[2.5px solid #505050]">
+                    </div>
+                </section>
+        
+                <section :size="m.bt[.7rem]"><!-- Radio -->
+                    <div :mod="row[100% 1%]" :layout="jus.co[space-between]">
+                        
+                        <div :mod="column[auto]">
+                            <input type="radio" id="inp2" name="rd0"
+                            :size="w[1.2rem] h[1.2rem]"
+                            :layout="val[sub]"   
+                            :box="appear[none] bg[#f4f4f420] bd[.5px solid #606060] br[20%] && checked:bg[#12ace9] bd[2px solid #e6e6e6] bx.sh[0 0px 1px 3px #195bff20]">
+                            <label for="">Radio one</label>
+                        </div>
+                        <div :mod="column[auto]">
+                            <input type="radio" id="inp2" name="rd0"
+                            :size="w[1rem] h[1rem]"
+                            :layout="val[txt-top]"   
+                            :box="appear[none] bg[none] bd[.5px solid #606060] br[50%] && checked: bd[4.5px solid #12ace9] && focus: bx.sh[0 0px 1px 4px #195bff40]">
+                            <label for="">Radio two</label>
+                        </div>
+                        <div :mod="column[auto]">
+                            <input type="radio" id="inp2" name="rd0"
+                            :size="w[1rem] h[1rem]"
+                            :layout="val[txt-top]"   
+                            :box="appear[none] bg[#f4f4f420] bd[.5px solid gray] br[2px] && checked: bg[#7d33ff70] bd[1px solid #7d33ff] && focus: ot[thick double #7d33ff26]">
+                            <label for="">Radio three</label>
+                        </div>
+                        <div :mod="column[auto]">
+                            <input type="radio" id="inp2" name="rd0"
+                            class="fas fa-face-frown fa-lg"
+                            :size="w[1rem] h[1rem]"
+                            :text="co[gray] && checked: co[orangered]"
+                            :layout="val[txt-top]"   
+                            :box="appear[none] cursor[pointer]">
+                                <label for="">Radio four</label>
+                        </div>
+                    </div>
+                </section>
+                
+                <section :size="m.bt[.7rem]"><!-- Checkbox -->
+                    <div :mod="row[100% 1%]" :layout="jus.co[space-between]">
+                        <div :mod="column[auto]">
+                            <input type="checkbox" id="inp2" name="rd0"
+                            class="fas fa-check" :size="w[1.2rem] h[1.2rem] p[.1rem]" :layout="val[middle]"  
+                            :text="co[transparent] && checked: co[#e6e6e6]" 
+                            :box="appear[none] bg[#e6e6e620] bd[.5px solid #606060] br[20%] && checked:bg[#12ace9] bd[2px solid #e6e6e6] && focus: bx.sh[0 0px 1px 4px #12ace930]">
+                            <label for="">Check one</label>
+                        </div>
+                        <div :mod="column[auto]">
+                            <input type="checkbox" id="inp2" name="rd0" checked
+                                class="fas fa-house-chimney" :size="w[2rem] h[2rem] p[.5rem]" :text="co[gray] && hover: co[#f4f4f4] && checked: co[#f4f4f4]"
+                                :layout="val[middle]"   
+                                :box="appear[none] bg[#f4f4f405] bd[1px solid #404040] br[20%] cursor[pointer] && hover: bg[#7d33ff] && checked: bg[#7d33ff]">
+                                <label for="">Check two</label>
+                        </div>
+                        <div :mod="column[auto]">
+                            <input type="checkbox" id="inp2" name="rd0"
+                            class="fas fa-o"
+                            :size="w[1.2rem] h[1.2rem] p[.15rem]"
+                            :layout="val[middle]"  
+                            :text="co[transparent] && checked: co[#e6e6e6]" 
+                            :box="appear[none] bg[#e6e6e620] bd[.5px solid #7d33ff80] br[2px] && checked:bg[#7d33ff] bd.col[none] && focus: ot[thick double #7d33ff36]">
+                                    <label for="">Check three</label>
+                        </div>
+                        <div :mod="column[auto]">
+                            <input type="checkbox" id="inp2" name="rd0"
+                            :size="w[1.2rem] h[1.2rem]"
+                            :layout="val[middle]"  
+                            :box="appear[none] cursor[pointer] bg[#e6e6e620] bd[.5px solid #ff8929] br[50%] && checked:bg[#ff8929] bd.col[none] && focus: bx.sh[0 0px 1px 4px #19875440]">
+                            <label for="">Check four</label>
+                        </div>
+    
+                    </div>
+                </section>
+                
+                <section :size="m.bt[.4rem]"><!-- Navigation -->
+                    <div :mod="row[auto 5px]" :layout="jus.co[space-between]">
+
+                        <div :mod="column[98%]">
+                            <nav :layout="dsp[flex] jus.c[space-between]" :box="h[2rem] w[100%] bg[#f4f4f4]">
+                                <a :size="h[1.6rem] m[auto 1rem]"><img height="100%" src="./static/img/logo.ico" alt="logo-mod-css"></a>
+                                <ul  :box="m[auto 1rem]" :text="ls[none]">
+                                    <li :layout="dsp[inline-block]  m[auto 8px]"><a href="#Item1"> Item1</a></li>
+                                    <li :layout="dsp[inline-block]  m[auto 8px]"><a href="#Item2"> Item2</a></li>
+                                    <li :layout="dsp[inline-block]  m[auto 8px]"><a href="#Item3"> Item3</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div :mod="column[98%]">
+                            <nav :layout="dsp[flex] jus.c[space-between]" :box="h[2rem] w[100%] bg[none] m.tp[1rem]">
+                                <a :size="h[1.6rem] m[auto 1rem]"><img height="120%" src="./static/img/logo-modCSS.png" alt="logo-mod-css"></a>
+                                <ul :box="m[auto 1rem]" :text="ls[none]">
+                                    <li :layout="dsp[inline-block] m[auto 8px]">
+                                        <a href="#Item1" :text="co[lightgray] && hover:co[darkblue]">Item1</a></li>
+                                    <li :layout="dsp[inline-block] m[auto 8px]">
+                                        <a href="#Item2" :text="co[lightgray] && hover:co[darkblue]">Item2</a></li>
+                                    <li :layout="dsp[inline-block] m[auto 8px]">
+                                        <a href="#Item3" :text="co[lightgray] && hover:co[darkblue]">Item3</a></li>
+                                </ul>
+                            </nav>                        
+                        </div>
+                    </div>
+                </section>
+        
+                <section :size="m.bt[.4rem]"><!-- List -->
+                    <div :size="w[100%] dsp[inline-flex]">
+                        <ol class="unit" :size="w[100%]" :text="ls.pos[inside] co[white]">
+                            <li :size="p[8px] m.bt[4px]" 
+                                :box="bd[.25px solid #2f4a83] bg[#3d4353] br[2px] bx.sh[0px 2px 4px gray] && hover: bg[#282c34] bd.co[none]"
+                                :text="hover:co[lightgray]">John DOE - UK</li>
+                            <li :size="p[8px] m.bt[4px]" 
+                                :box="bd[.25px solid #2f4a83] bg[#3d4353] br[2px] bx.sh[0px 2px 4px gray] && hover: bg[#282c34] bd.co[none]"
+                                :text="hover:co[lightgray]">Dev GEOS - CI</li>
+                            <li :size="p[8px] m.bt[4px]" 
+                                :box="bd[.25px solid #2f4a83] bg[#3d4353] br[2px] bx.sh[0px 2px 4px gray] && hover: bg[#282c34] bd.co[none]"
+                                :text="hover:co[lightgray]">Jack MA - CHN</li>
+                            <li :size="p[8px] m.bt[4px]" 
+                                :box="bd[.25px solid #2f4a83] bg[#3d4353] br[2px] bx.sh[0px 2px 4px gray] && hover: bg[#282c34] bd.co[none]"
+                                :text="hover:co[lightgray]">Bill GATES - USA</li>
+                        </ol>
+                    </div>
+        
+                </section>
+        
+                <section :size="m.bt[.4rem]"><!-- Textarea -->
+                    <div :layout="dsp[inline-block]" :size="w[100%]">
+                        <label 
+                            :layout="dsp[block]"
+                            :size="m[0 0 -2rem .8rem] p[4px] w[fit-content]">
+                            Textarea</label>
+                        <textarea 
+                            :size="m[0] p[2rem 1rem 1rem 1rem] w[100%] h[200px]"
+                            :box="bg[#f2f2f220] bd[1px solid lightgray] br[6px] ot[none] && focus: bg[white] bx.sh[0 0px 1px 4px #7d33ff30]"
+                            :text="co[gray] ln.h[1.5]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                    </div>
+                        
+                </section>
+    
+                <section :text="co[lightgray]" :box="m.bt[2rem]"><!--Card -->
+                    <div :size="w[70%] p[8px]" :box="bg[#202020] bd[.5px solid #404040] br[2px]">
+    
+                        <!-- Titles -->
+                        <h4 :box="m.bt[0]" :text="fo.sz[130%] fo.wg[bold]">Card title</h4>
+                        <span :text="fo.sz[90%]">Card subtitle</span>
+    
+                        <!-- body -->
+                        <p :box="p[12px] fo.sz[1rem]">lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua dolorum nobis eius error repudiandae praesentium cupiditate amet porro vitae 
+                            voluptatum iste rem assumenda odit rerum iusto pariatur excepturi deserunt earum
+                        </p>
+    
+                        <!-- buttons -->
+                        <div :mod="row[100%]" :layout="jus.co[space-between]">
+                            <a href="#" :mod="column[100%] || lg? column[49%]" :text="co[#195bff]">Back</a>
+    
+                            <button :mod="column[100%] || lg? column[49%]"
+                                :size="h[1.7rem]"
+                                :box="bg[#195bff] br[4px] bd[none] cursor[pointer] && hover:bg[#195bff50]"
+                                :text="co[lightgray] && hover:co[gray]"> 
+                                Next </button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </article>
+
+    </main>    
+</body>
+
+<script src="./static/app/bzmin.js"></script>
+
+<footer :box="m[2rem 0px 2rem 0px]" :text="tx.al[center] fo.fa[calibri]">
+    <span :layout="dsp[block]">
+        Proudly designed with Mod <i :text="co[#EC3883]" class="fas fa-heart" :fx="an[heartbeat infinite 1s ease-in-out]"></i>
+    </span>
+    <hr :box="bd[none]">
+    <span :size="m.tp[1rem]">Copyright© 2022 ~ MOD Labs   |    <a href="#" :text="co[var(--txt-color)]">Trademark Policy</a></span>
+</footer>
