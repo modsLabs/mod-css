@@ -4,7 +4,8 @@
 
 
 
-MOD is a CSS framework only based javascript.  
+MOD is a utility-first front-end framework based on javascript. 
+It supports breakpoints, flexgrid, states and almost all CSS properties.
 It was designed to prototype quickly, avoid external CSS, and speed up page loading.
 
 It hold in single file, only 10 kb
