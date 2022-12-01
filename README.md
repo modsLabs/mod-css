@@ -11,8 +11,9 @@ It was designed to prototype quickly, avoid external CSS, and speed up page load
 It hold in single file, only 10 kb
 
 
-# Design directly in your HTML. 
+# An utility-first CSS framework for front-end development 
 
+So, design directly in your HTML. 
 We supports : 
  - Almost all CSS properties,
  - Pseudo-classes,
