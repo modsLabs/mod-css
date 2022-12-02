@@ -16,10 +16,11 @@ It hold in single file, only 10 kb
 So, design directly in your HTML. 
 We supports : 
  - Almost all CSS properties,
- - Pseudo-classes,
+ - States (CSS pseudo-classes),
  - Breakpoints,
- - Flexbox based grid,
+ - Flexgrid based on flexbox,
  - Arbitrary values.
+ - Variables (coming soon)
  
 
 # Demo
