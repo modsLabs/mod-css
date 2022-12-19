@@ -63,7 +63,7 @@ https://mod-css.com/presets/card/
 
 https://mod-css.com/presets/checkbox/
 
-https://mod-css.com/presets/flexgrid/
+https://mod-css.com/presets/Flexgrid/
 
 https://mod-css.com/presets/fx/
 
