@@ -63,17 +63,17 @@ https://mod-css.com/presets/card/
 
 https://mod-css.com/presets/checkbox/
 
-https://mod-css.com/presets/Flexgrid/
+https://mod-css.com/presets/flexgrid/
 
 https://mod-css.com/presets/fx/
 
 https://mod-css.com/presets/image/
 
-https://mod-css.com/presets/input-field/
+https://mod-css.com/presets/input/
 
 https://mod-css.com/presets/list/
 
-https://mod-css.com/presets/nav-bar/
+https://mod-css.com/presets/navigation/
 
 https://mod-css.com/presets/radio/
 
